@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact · Oh No Games</title>
+	<meta name="description" content="Contact Oh No Games: press, business, support or just to say hi.">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+	<header class="site-header">
+		<a class="brand" href="index.html" data-site="company">Oh No Games</a>
+		<button class="menu-btn" data-menu-open>Menu</button>
+	</header>
+
+	<div class="menu" aria-hidden="true">
+		<div class="menu-top">
+			<a class="brand" href="index.html" data-site="company">Oh No Games</a>
+			<button class="menu-btn" data-menu-close>Close</button>
+		</div>
+		<nav>
+			<a href="index.html">Home <small>01</small></a>
+			<a href="game.html">D.J.T <small>02</small></a>
+			<a href="index.html#studio">Studio <small>03</small></a>
+			<a href="contact.html">Contact <small>04</small></a>
+			<a href="privacy.html">Privacy <small>05</small></a>
+		</nav>
+		<div class="menu-foot">
+			<a data-site="email-link" href="mailto:hello@ohnogames.site">hello@ohnogames.site</a>
+			<span data-site="address-inline"></span>
+		</div>
+	</div>
+
+	<div class="corner left">© <span data-year>2026</span> <span data-site="company">Oh No Games</span></div>
+	<div class="corner right">We read everything</div>
+
+	<main>
+		<section class="page-hero">
+			<div class="row"><span class="label">Contact</span><span class="idx">04/</span></div>
+			<h1 class="mega lines" style="margin-top:20px">Let's<br><span class="purple">talk.</span></h1>
+			<div class="row">
+				<p class="small-caps reveal" style="max-width:340px">Press, publishers, partners, players, bug reports or fan art — drop us a line.</p>
+			</div>
+		</section>
+
+		<section class="contact-grid">
+			<div class="contact-info reveal">
+				<div>
+					<span class="label">E-mail</span>
+					<a data-site="email-link" href="mailto:hello@ohnogames.site">hello@ohnogames.site</a>
+				</div>
+				<div>
+					<span class="label">Company</span>
+					<p data-site="legalName">Oh No Games</p>
+					<p class="label" style="margin-top:6px" data-site="registration" data-hide-empty></p>
+				</div>
+				<div>
+					<span class="label">Address</span>
+					<address class="address-block" data-site="address"></address>
+				</div>
+				<div>
+					<span class="label">Follow</span>
+					<div class="socials">
+						<a data-link="steamUrl" data-hide-empty href="#" target="_blank" rel="noopener">Steam</a>
+						<a data-link="youtubeUrl" data-hide-empty href="#" target="_blank" rel="noopener">YouTube</a>
+						<a data-link="xUrl" data-hide-empty href="#" target="_blank" rel="noopener">X</a>
+						<a data-link="discordUrl" data-hide-empty href="#" target="_blank" rel="noopener">Discord</a>
+						<a href="game.html">D.J.T →</a>
+					</div>
+				</div>
+			</div>
+
+			<form id="contact-form" class="reveal" novalidate>
+				<div class="split">
+					<div class="field">
+						<label class="top" for="name">Your name</label>
+						<input type="text" id="name" name="name" placeholder="Jane Doe" required autocomplete="name">
+					</div>
+					<div class="field">
+						<label class="top" for="email">E-mail</label>
+						<input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email">
+					</div>
+				</div>
+				<div class="field">
+					<label class="top" for="topic">About</label>
+					<select id="topic" name="topic">
+						<option>General</option>
+						<option>Press / Media</option>
+						<option>Business / Publishing</option>
+						<option>Bug report / Support</option>
+						<option>Privacy request</option>
+					</select>
+				</div>
+				<div class="field">
+					<label class="top" for="message">Message</label>
+					<textarea id="message" name="message" placeholder="Oh no, I have something to tell you…" required></textarea>
+				</div>
+				<div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+				<label class="consent">
+					<input type="checkbox" name="consent" required>
+					<span>I agree that Oh No Games may use the details I send to answer my message, as described in the <a href="privacy.html#contact-form">Privacy Policy</a>.</span>
+				</label>
+				<button class="btn solid" type="submit">Send message →</button>
+				<p class="form-status" role="status" aria-live="polite"></p>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="huge">Oh no<span>.</span></div>
+		<div class="footer-grid">
+			<div><img class="footer-logo" src="assets/img/ohno-logo.png" alt="Oh No Games"></div>
+			<div><span class="label">Pages</span><a href="index.html">Home</a><a href="game.html">D.J.T</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a></div>
+			<div><span class="label">Contact</span><a data-site="email-link" href="mailto:hello@ohnogames.site">hello@ohnogames.site</a><address class="address-block" data-site="address"></address></div>
+			<div><span class="label">Follow</span><a data-link="steamUrl" data-hide-empty href="#" target="_blank" rel="noopener">Steam</a><a data-link="youtubeUrl" data-hide-empty href="#" target="_blank" rel="noopener">YouTube</a><a data-link="xUrl" data-hide-empty href="#" target="_blank" rel="noopener">X / Twitter</a><a data-link="discordUrl" data-hide-empty href="#" target="_blank" rel="noopener">Discord</a><span>© <span data-year>2026</span> <span data-site="legalName">Oh No Games</span></span></div>
+		</div>
+	</footer>
+
+	<script src="assets/config.js"></script>
+	<script src="assets/main.js"></script>
+	<script>
+		// Simple validation before main.js sends the form
+		document.addEventListener("submit", function (e) {
+			var f = e.target, st = f.querySelector(".form-status");
+			if (f.id !== "contact-form") return;
+			if (!f.checkValidity()) {
+				e.stopImmediatePropagation(); e.preventDefault();
+				st.className = "form-status err";
+				st.textContent = !f.consent.checked && f.name.value && f.email.validity.valid && f.message.value
+					? "Please tick the consent box." : "Please fill in your name, a valid e-mail and a message.";
+			}
+		}, true);
+	</script>
+</body>
+</html>
